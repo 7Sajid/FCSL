@@ -174,34 +174,34 @@ export function Navbar() {
           <div className="xl:hidden flex items-center">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon" className="h-12 w-12 rounded-full focus-visible:ring-0">
-                  <MoreVertical className="h-7 w-7 text-slate-800" />
+                <Button variant="outline" size="icon" className="h-11 w-11 rounded-xl border-2 border-slate-300 bg-white hover:bg-slate-50 focus-visible:ring-0 shadow-sm">
+                  <MoreVertical className="h-6 w-6 text-slate-900" strokeWidth={2.5} />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-[220px] p-2 rounded-xl shadow-xl border-slate-200 bg-white z-[100]">
-                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-sm font-medium">
+                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-[15px] font-bold text-slate-900">
                   <Link href="/">Home</Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-sm font-medium">
+                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-[15px] font-bold text-slate-900">
                   <Link href="/about">About Us</Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-sm font-medium">
+                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-[15px] font-bold text-slate-900">
                   <Link href="/services/packages">Our Services</Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-sm font-medium">
+                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-[15px] font-bold text-slate-900">
                   <Link href="/markets/updates">Market Info</Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-sm font-medium">
+                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-[15px] font-bold text-slate-900">
                   <Link href="/research/fundamental">Research</Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-sm font-medium">
+                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-[15px] font-bold text-slate-900">
                   <Link href="/oms/desktop">Puji OMS</Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-sm font-medium">
+                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-[15px] font-bold text-slate-900">
                   <Link href="/forms/downloads">Forms and Payments</Link>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator className="my-1 mx-2" />
-                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-sm font-medium">
+                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-[15px] font-bold text-slate-900">
                   <Link href="/contact">More (Contact/FAQ)</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
