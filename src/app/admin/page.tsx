@@ -103,6 +103,15 @@ export default function AdminLogin() {
                 </div>
               )}
             </Button>
+            
+            <Button 
+              type="button" 
+              variant="outline"
+              className="w-full h-11 border-slate-200 text-slate-600 hover:bg-slate-50 dark:border-slate-800 dark:text-slate-400 dark:hover:bg-slate-900"
+              asChild
+            >
+              <Link href="/">Return to Home Page</Link>
+            </Button>
           </form>
         </CardContent>
         <CardFooter className="flex justify-center border-t border-slate-100 dark:border-slate-800 pt-6">
