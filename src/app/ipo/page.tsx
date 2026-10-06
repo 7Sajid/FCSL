@@ -1,0 +1,1 @@
+export default function IpoPage() { return <div className="p-12">IPO Center</div>; }

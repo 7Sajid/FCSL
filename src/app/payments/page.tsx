@@ -1,0 +1,1 @@
+export default function PaymentsPage() { return <div className="p-12">Payments Dashboard</div>; }

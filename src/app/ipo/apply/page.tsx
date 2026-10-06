@@ -1,0 +1,1 @@
+export default function IpoApplyPage() { return <div className="p-12">IPO Application Form</div>; }

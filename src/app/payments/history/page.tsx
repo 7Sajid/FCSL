@@ -1,0 +1,1 @@
+export default function HistoryPage() { return <div className="p-12">Payment History</div>; }

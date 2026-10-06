@@ -1,0 +1,1 @@
+export default function WithdrawPage() { return <div className="p-12">Fund Withdrawal Form</div>; }

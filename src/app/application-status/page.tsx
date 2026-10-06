@@ -1,0 +1,1 @@
+export default function StatusPage() { return <div className="p-12">Application Tracking</div>; }
