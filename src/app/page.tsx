@@ -9,7 +9,7 @@ export default function Home() {
     <div className="flex flex-col w-full">
 
       {/* Hero Section */}
-      <section className="bg-[#040f1c] text-primary-foreground pt-24 pb-64 sm:pb-24 md:py-32 lg:py-40 relative overflow-hidden flex flex-col justify-center min-h-[600px]">
+      <section className="bg-[#040f1c] text-primary-foreground pt-28 pb-16 md:py-32 lg:py-40 relative overflow-hidden flex flex-col justify-center min-h-[100vh] md:min-h-[600px]">
         {/* Animated Stock Background */}
         <HeroStockAnimation />
         
@@ -37,7 +37,7 @@ export default function Home() {
         </div>
 
         {/* Floating Glass Widgets - Bottom Right */}
-        <div className="absolute bottom-6 left-6 right-6 sm:left-auto md:bottom-10 md:right-10 z-20 flex flex-col sm:flex-row gap-4">
+        <div className="relative mt-12 px-4 sm:px-8 md:px-0 md:mt-0 md:absolute md:bottom-10 md:right-10 z-20 flex flex-col sm:flex-row gap-4 w-full md:w-auto">
           {/* DSEX Widget */}
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-5 shadow-2xl flex items-center gap-8 min-w-[260px] hover:bg-white/15 transition-colors">
             <div>
