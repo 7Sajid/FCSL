@@ -19,11 +19,11 @@ export default function Home() {
         
         <div className="container relative z-10 w-full">
           <div className="max-w-4xl space-y-8">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] font-bold tracking-tight leading-[1.1]">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-[4.5rem] font-bold tracking-tight leading-[1.2] sm:leading-[1.1]">
               Invest With Confidence.<br />
               <span className="text-gold">Trade With Intelligence.</span>
             </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/90 max-w-xl font-medium">
+            <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 max-w-xl font-medium mt-2 sm:mt-0">
               Your trusted partner for smarter participation in Bangladesh&apos;s capital market.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
