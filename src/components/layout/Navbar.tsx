@@ -12,7 +12,7 @@ import {
   TrendingUp, BarChart2, Newspaper,
   PieChart, UserPlus, Monitor, BookOpen,
   Edit, Trash2, ArrowDownCircle, CreditCard, CheckCircle2, ArrowUpCircle, Download, File, ClipboardList,
-  Radio, Briefcase, HelpCircle, MessageSquareWarning, Moon, Sun
+  Radio, Briefcase, HelpCircle, MessageSquareWarning, Moon, Sun, MoreVertical
 } from "lucide-react";
 import {
   DropdownMenu,
@@ -158,7 +158,7 @@ export function Navbar() {
 
       {/* Main Navbar */}
       <div className="container flex h-24 items-center justify-between">
-        <div className="flex gap-8 items-center w-full">
+        <div className="flex gap-8 items-center justify-between xl:justify-start w-full">
           <Link href="/" className="flex items-center shrink-0">
             <Image 
               src="/logo-transparent.png" 
@@ -169,6 +169,45 @@ export function Navbar() {
               priority
             />
           </Link>
+          
+          {/* Mobile Menu (3 dots) */}
+          <div className="xl:hidden flex items-center">
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon" className="h-12 w-12 rounded-full focus-visible:ring-0">
+                  <MoreVertical className="h-7 w-7 text-slate-800" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-[220px] p-2 rounded-xl shadow-xl border-slate-200 bg-white z-[100]">
+                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-sm font-medium">
+                  <Link href="/">Home</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-sm font-medium">
+                  <Link href="/about">About Us</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-sm font-medium">
+                  <Link href="/services/packages">Our Services</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-sm font-medium">
+                  <Link href="/markets/updates">Market Info</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-sm font-medium">
+                  <Link href="/research/fundamental">Research</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-sm font-medium">
+                  <Link href="/oms/desktop">Puji OMS</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-sm font-medium">
+                  <Link href="/forms/downloads">Forms and Payments</Link>
+                </DropdownMenuItem>
+                <DropdownMenuSeparator className="my-1 mx-2" />
+                <DropdownMenuItem asChild className="p-3 cursor-pointer rounded-lg text-sm font-medium">
+                  <Link href="/contact">More (Contact/FAQ)</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          </div>
+
           <nav className="hidden xl:flex gap-1 items-center ml-auto">
             <Link href="/" className="relative group px-4 py-2.5 flex items-center rounded-xl cursor-pointer">
               <span className={`relative z-10 font-bold group-hover:text-blue-700 transition-all duration-300 tracking-wide text-[16px] whitespace-nowrap ${isScrolled ? 'text-blue-700' : 'text-slate-800'}`}>Home</span>
