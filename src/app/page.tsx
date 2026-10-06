@@ -19,7 +19,7 @@ export default function Home() {
         
         <div className="container relative z-10 w-full">
           <div className="max-w-4xl space-y-8">
-            <h1 className="text-5xl md:text-6xl lg:text-[4.5rem] font-bold tracking-tight leading-[1.1] whitespace-nowrap">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] font-bold tracking-tight leading-[1.1]">
               Invest With Confidence.<br />
               <span className="text-gold">Trade With Intelligence.</span>
             </h1>

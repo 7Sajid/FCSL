@@ -1,8 +1,17 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 export function Footer() {
+  const pathname = usePathname();
+
+  if (pathname?.startsWith("/admin") || pathname?.startsWith("/dashboard")) {
+    return null;
+  }
+
   return (
     <footer className="bg-white text-slate-600 mt-auto border-t border-slate-200">
       <div className="container py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">

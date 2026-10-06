@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { 
   ChevronDown, 
@@ -23,6 +24,7 @@ import {
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
   const [marketStatus, setMarketStatus] = useState("CLOSED");
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -84,6 +86,10 @@ export function Navbar() {
       clearInterval(interval);
     };
   }, []);
+
+  if (pathname?.startsWith("/admin") || pathname?.startsWith("/dashboard")) {
+    return null;
+  }
 
   return (
     <header className={`sticky top-0 z-50 w-full transition-all duration-300 ${isScrolled ? "bg-white/95 shadow-md border-b-blue-200" : "bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b"}`}>
@@ -159,7 +165,7 @@ export function Navbar() {
               alt="First Capital Securities Limited Logo" 
               width={420} 
               height={96} 
-              className="h-[96px] w-[420px] object-contain mix-blend-multiply"
+              className="h-auto max-h-[96px] w-[260px] sm:w-[320px] md:w-[420px] object-contain mix-blend-multiply"
               priority
             />
           </Link>
