@@ -107,7 +107,7 @@ export default function AdminLogin() {
             <Button 
               type="button" 
               variant="outline"
-              className="w-full h-11 border-slate-200 text-slate-600 hover:bg-slate-50 dark:border-slate-800 dark:text-slate-400 dark:hover:bg-slate-900"
+              className="w-full h-11 bg-yellow-500/20 text-yellow-700 border-yellow-500/30 hover:bg-yellow-500/30 hover:text-yellow-800 dark:bg-yellow-500/10 dark:text-yellow-400 dark:border-yellow-500/30 dark:hover:bg-yellow-500/20"
               asChild
             >
               <Link href="/">Return to Home Page</Link>
